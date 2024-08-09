@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Welcom to My page">
+    <title>Form</title>
+    <style>
+        
+        body{
+            background-color: #DDD ;
+            font-family: arial,Tahoma;
+        }
+        fieldset{
+            background-color: #fff;
+            border: 1px solid #CCC;
+            padding:20px;
+            margin: 20px auto;
+        }
+
+        legend{background-color: rgb(125, 184, 74);border: 1px solid #ccc;padding: 10px;}
+
+        label{margin-bottom: 10px; display: block;}
+
+        input{margin-bottom:10px ;}
+
+        input[type = "text"]
+        ,input[type = "password"],
+        input[type = "email"],
+        textarea
+        {padding: 8px;width: 300px;display: block;}
+
+        hr{border:1px #eee solid;} 
+
+        textarea{height: 200px;}
+
+        .info{color: rgb(23, 23, 146);}
+
+        
+    </style>
+    <link rel = "stylesheet" href = "style.css">
+    <script></script>
+</head>
+<body>
+    <form name = "register">
+        <fieldset>
+            <legend>Prsonal Information</legend>
+            
+            <label class = "info">User Name</label>
+            <input type = "text" name = "name">
+
+            <label class = "info">Password</label>
+            <input type ="password" name = "password">
+
+            <label class = "info">Email</label>
+            <input type = "email" name = "email">
+
+            <label class = "info">Gender</label>
+            <select name="Gender">
+                <option name = "Male">Male</option>
+                <option name = "Female">Female</option>
+            </select>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Favorite</legend>
+            <label class = "info">Your Favorite Language</label>
+            <input type = "radio" name = "editor">English<br>
+            <input type = "radio" name = "editor">France<br>
+            <input type = "radio" name = "editor">Arabic
+            <hr>
+            <label class = "info">Your Favorite Browser</label>
+            <input type = "radio" name = "browser">Google Crome<br>
+            <input type = "radio" name = "browser">Firfox<br>
+            <input type = "radio" name = "browser">Opera
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Message</legend>
+            <textarea name="message"></textarea>
+            <input type = "submit" value = "Send Your Dta">
+        </fieldset>
+
+
+    </form>
+
+
+
+</body>
+</html>
